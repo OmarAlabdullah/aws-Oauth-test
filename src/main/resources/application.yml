@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            clientId: 36so0ua3gjkicuuovlhffq2qcp
+            clientSecret: 12behs94lc7llk3vitjbpo0emvitps9oqtdbje7k13nqa3jgr15a
+            scope: openid
+            redirect-uri: http://localhost:8080/login/oauth2/code/cognito
+            clientName: kameleon-test
+        provider:
+          cognito:
+            issuerUri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_BXtBPBYae
+            user-name-attribute: cognito:username
+
+
+
